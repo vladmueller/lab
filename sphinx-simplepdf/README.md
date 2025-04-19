@@ -22,3 +22,7 @@ sphinx-quickstart
 ```bash
 make simplepdf
 ```
+
+## Tasks
+
+- [ ] Use own font(s) in PDF
