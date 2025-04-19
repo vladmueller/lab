@@ -2,3 +2,4 @@ Sphinx
 sphinx-simplepdf
 setuptools
 sphinx-autobuild
+sphinx-rtd-theme
