@@ -25,3 +25,14 @@ exclude_patterns = []
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
+# -- SimplePDF Options -------------------------------------------------------
+
+simplepdf_vars = {
+    'primary': '#FFFF00',
+    'secondary': 'orange',
+    'white': '#0000FF',
+    'links': '#0000FF',
+    'cover-bg': '#FFFF00',
+    'cover': '#0000FF',
+}
