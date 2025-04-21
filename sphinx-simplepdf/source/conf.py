@@ -37,3 +37,6 @@ simplepdf_vars = {
     'cover-bg': '#FFFF00',
     'cover': '#0000FF',
 }
+
+def setup(app):
+    app.add_css_file('custom.css')    
