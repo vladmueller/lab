@@ -30,6 +30,7 @@ html_static_path = ['_static']
 
 simplepdf_vars = {
     'primary': '#FFFF00',
+    'primary-opaque': '#FFFF00',
     'secondary': 'orange',
     'white': '#0000FF',
     'links': '#0000FF',
