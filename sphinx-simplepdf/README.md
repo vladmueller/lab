@@ -26,3 +26,7 @@ make simplepdf
 ## Tasks
 
 - [ ] Use own font(s) in PDF
+
+---
+
+[Overwriting CSS for PDF · Issue #98 · useblocks/sphinx-simplepdf](https://github.com/useblocks/sphinx-simplepdf/issues/98)
