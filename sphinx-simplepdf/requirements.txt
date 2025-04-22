@@ -3,3 +3,4 @@ sphinx-simplepdf
 setuptools
 sphinx-autobuild
 sphinx-rtd-theme
+sphinxcontrib-confluencebuilder
