@@ -21,3 +21,15 @@ help:
 
 livehtml:
 	sphinx-autobuild "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+docker-build:
+	docker build -t ghcr.io/vladmueller/sphinx-simplepdf:latest .
+
+docker-push:
+	docker push ghcr.io/vladmueller/sphinx-simplepdf:latest
+
+docker-make-html:
+	docker run -p 50006:50006 --rm -v $(shell echo $${PWD}):/workdir ghcr.io/vladmueller/sphinx-simplepdf:latest html
+
+docker-make-pdf:
+	docker run -p 50006:50006 --rm -v $(shell echo $${PWD}):/workdir ghcr.io/vladmueller/sphinx-simplepdf:latest simplepdf
