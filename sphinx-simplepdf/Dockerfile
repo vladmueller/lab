@@ -6,7 +6,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y build-essential python3-pip python3-venv \
-    && apt-get install -y libglib2.0-0 libglib2.0-dev libpango1.0-dev
+    && apt-get install -y weasyprint
 
 ADD requirements.txt /
 
