@@ -5,13 +5,17 @@ ENV TZ=Europe/Berlin
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update \
     && apt-get upgrade -y \
-    && apt-get install -y build-essential \
-    && apt-get install -y python3-pip
+    && apt-get install -y build-essential python3-pip python3-venv
 
 ADD requirements.txt /
 
-RUN pip3 install -r requirements.txt
+RUN python3 -m venv /venv
+
+RUN /venv/bin/pip install --upgrade pip \
+    && /venv/bin/pip install -r requirements.txt
 
 WORKDIR /workdir
+
+ENV PATH="/venv/bin:$PATH"
 
 ENTRYPOINT ["make"]
