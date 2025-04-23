@@ -25,7 +25,7 @@ make simplepdf
 
 ## Tasks
 
-- [ ] Use own font(s) in PDF
+- [x] Use own font(s) in PDF
 
 ---
 
