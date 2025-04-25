@@ -26,6 +26,7 @@ make simplepdf
 ## Tasks
 
 - [x] Use own font(s) in PDF
+- [ ] Confluence settings
 
 ---
 
