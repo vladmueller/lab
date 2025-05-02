@@ -11,8 +11,7 @@ func main() {
 
 	result, err := divide(a, b)
 	if err != nil {
-		// handle error
-		fmt.Println(err)
+		panic(err)
 	}
 
 	fmt.Println(result)
