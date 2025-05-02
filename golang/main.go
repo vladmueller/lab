@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -11,7 +12,8 @@ func main() {
 
 	result, err := divide(a, b)
 	if err != nil {
-		panic(err)
+		fmt.Println("Division by zero is not allowed:", err)
+		os.Exit(1)
 	}
 
 	fmt.Println(result)
