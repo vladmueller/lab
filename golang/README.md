@@ -29,3 +29,7 @@ We can do this automatically with:
 ```shell
 go mod tidy
 ```
+
+---
+
+An HTTP Router in Go is called "Muxer" in reference to a multiplexer.
