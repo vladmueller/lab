@@ -33,3 +33,13 @@ go mod tidy
 ---
 
 An HTTP Router in Go is called "Muxer" in reference to a multiplexer.
+
+Use a dedicated folder/package for every route, e.g. `/api/v1/ping`
+
+```
+source
+    - api
+        - ping
+            handle.go
+            response.go
+```
