@@ -1,0 +1,14 @@
+services:
+  mcp-atlassian:
+    image: ghcr.io/sooperset/mcp-atlassian:latest
+    env_file: .env
+    command: ["--transport", "streamable-http", "--port", "9000","--host", "0.0.0.0", "-vv"]
+    ports:
+      - "9000:9000"
+    restart: unless-stopped
+    # optional Persistenz für OAuth-Setup (Token-Cache)
+    volumes:
+      - ../.mcp-atlassian:/home/app/.mcp-atlassian
+
+volumes:
+  mcp-atlassian:
