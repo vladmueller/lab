@@ -21,3 +21,15 @@ docker run --rm -it \
 ```shell
 ./mvnw spring-boot:run
 ```
+
+## Create a Docker image
+
+```shell
+./mvnw spring-boot:build-image
+```
+
+### Start Container
+
+```shell
+docker run --rm -p 8080:8080 -e ESDB_SERVER_URI="http://host.docker.internal:3000" opencqrs:0.0.1-SNAPSHOT
+```
