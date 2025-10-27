@@ -7,13 +7,7 @@
 ## Start EventSourcingDB
 
 ```shell
-docker run --rm -it \
-    --publish 3000:3000 \
-    docker.io/thenativeweb/eventsourcingdb:1.1.0 run \
-    --api-token secret \
-    --data-directory-temporary \
-    --http-enabled=true \
-    --https-enabled=false
+docker run --rm -it --publish 3000:3000 docker.io/thenativeweb/eventsourcingdb:1.1.0 run --api-token secret --data-directory-temporary --http-enabled=true --https-enabled=false
 ```
 
 ## Start application
