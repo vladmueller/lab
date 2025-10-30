@@ -1,0 +1,21 @@
+# curl --request POST
+#     --url "http://localhost:3000/api/v1/read-events"
+#     --header "Authorization: Bearer secret"
+#     --data '{
+#              "subject": "/",
+#              "options": {
+#                    "recursive": true
+#              }
+#            }'
+POST http://localhost:3000/api/v1/read-events
+Authorization: Bearer secret
+Content-Type: application/json
+
+{
+    "subject": "/",
+    "options": {
+        "recursive": true
+    }
+}
+
+###

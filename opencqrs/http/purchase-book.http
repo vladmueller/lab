@@ -1,0 +1,23 @@
+
+# curl --request POST
+#     --url "http://localhost:8080/books/purchase"
+#     --header "Content-Type: application/json"
+#     --data '{
+#              "id": "ab9c7d71-9a5e-4664-8b75-73f4d04cac5e",
+#              "isbn": "978-0008471286",
+#              "title": "Lord of the Rings",
+#              "author": "JRR Tolkien",
+#              "numPages": 1248
+#            }'
+POST http://localhost:8080/books/purchase
+Content-Type: application/json
+
+{
+    "id": "ab9c7d71-9a5e-4664-8b75-73f4d04cac5e",
+    "isbn": "978-0008471286",
+    "title": "Lord of the Rings",
+    "author": "JRR Tolkien",
+    "numPages": 1248
+}
+
+###
